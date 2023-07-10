@@ -51,7 +51,7 @@ def sqli_scan(loaded_requests_list, headers_file, sqlmap_path, sqlmap_output_dir
                 start_index = decoded_output.find("Parameter:")
                 end_index = decoded_output.find("Payload:", start_index)
                 filtered_output = decoded_output[start_index:end_index].strip()
-                f.write("\nInfected URL: "+mRequest.url+'\n')
+                f.write("Infected URL: "+mRequest.url+'\n')
                 f.write("Infected Parameters: "+'\n')
                 f.write(filtered_output+'\n')
                 f.write("------------------------------------------")
