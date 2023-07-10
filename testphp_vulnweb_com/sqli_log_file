@@ -1,0 +1,35 @@
+-----------------------------------------------------------
+start to scan: http://testphp.vulnweb.com/artists.php with param: artist=devmrt
+------------------------
+
+Infected URL: http://testphp.vulnweb.com/artists.php
+Infected Parameters: 
+Parameter: artist (GET)
+    Type: boolean-based blind
+    Title: OR boolean-based blind - WHERE or HAVING clause (MySQL comment)
+-----------------------------------------------------------------------------------------------------
+start to scan: http://testphp.vulnweb.com/search.php with param: test=devmrt
+------------------------
+
+Infected URL: http://testphp.vulnweb.com/search.php
+Infected Parameters: 
+Parameter: test (GET)
+    Type: UNION query
+    Title: Generic UNION query (NULL) - 3 columns
+-----------------------------------------------------------------------------------------------------
+start to scan: http://testphp.vulnweb.com/search.php with param: searchFor=devmrt\&goButton=devmrt
+------------------------
+this endpoint to seem to be infected
+-----------------------------------------------------------
+start to scan: http://testphp.vulnweb.com/listproducts.php with param: cat=devmrt\&artist=devmrt
+------------------------
+
+Infected URL: http://testphp.vulnweb.com/listproducts.php
+Infected Parameters: 
+Parameter: cat (GET)
+    Type: boolean-based blind
+    Title: OR boolean-based blind - WHERE or HAVING clause (MySQL comment)
+-----------------------------------------------------------------------------------------------------
+start to scan: http://testphp.vulnweb.com/showimage.php with param: file=devmrt
+------------------------
+this endpoint to seem to be infected
